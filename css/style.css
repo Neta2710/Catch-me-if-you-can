@@ -768,3 +768,21 @@ img#mortal {
     transform: translate(0);
   }
 }
+
+.hidestart {
+  top: 8px;
+  width: 1525px;
+  z-index: 999;
+  position: fixed;
+  background-color: black;
+  height: 80px;
+  border-radius: 10px;
+  left: 195px;
+  display: none;
+}
+
+#king {
+  position: relative;
+  left: 590px;
+  top: 5px;
+}

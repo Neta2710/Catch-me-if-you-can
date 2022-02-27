@@ -131,6 +131,7 @@ function check() {
 }
 function Start() {
   w++;
+  document.querySelector(".hidestart").style.display = "block";
   document.getElementById("intro").style.display = "none";
   document.getElementById("pacman").style.display = "none";
   document.getElementById("mortal").style.display = "none";
@@ -598,5 +599,3 @@ function Reset() {
   score.innerHTML = points;
   Start()
 }
-
-

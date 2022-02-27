@@ -8,6 +8,4 @@ chose a faire pour terminer
 
 5 (bonus potentiel)
 
-6 (ajouter des couleur au seconde)
-
-7 empecher de click start en  pleine game
+6 (empecher de click start en  pleine game)
