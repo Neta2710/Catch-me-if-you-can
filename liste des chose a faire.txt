@@ -2,10 +2,7 @@ chose a faire pour terminer
 
 1 nettoyer le code supprimer les chose inutile et ajouter des commentaire de partout puis bien ranger
 
-3 reset !
+2 (projectile de l'arme)
 
-4 (projectile de l'arme)
+3 (bonus potentiel)
 
-5 (bonus potentiel)
-
-6 (empecher de click start en  pleine game)
