@@ -1,0 +1,679 @@
+body {
+  background: #33cccc;
+  animation: color 20s infinite linear;
+  overflow-x: hidden;
+}
+
+img::selection {
+  background: transparent;
+}
+h1::selection {
+  background: transparent;
+}
+h2::selection {
+  background: transparent;
+}
+h3::selection {
+  background: transparent;
+}
+p::selection {
+  background: transparent;
+}
+span::selection {
+  background: transparent;
+}
+div::selection {
+  background: transparent;
+}
+a::selection {
+  background: transparent;
+}
+
+@keyframes color {
+  0% {
+    background: #33cccc;
+  }
+  20% {
+    background: #33cc36;
+  }
+  40% {
+    background: #fcca00;
+  }
+  60% {
+    background: #fc8f00;
+  }
+  80% {
+    background: #dd1717;
+  }
+  90% {
+    background: #af17d4;
+  }
+  100% {
+    background: #33cccc;
+  }
+}
+
+header {
+  display: block;
+  background-color: bisque;
+  border: black 5px solid;
+  width: 1500px;
+  margin: auto;
+  height: 70px;
+  border-radius: 10px;
+}
+.titleOfHeader {
+  top: 15px;
+  left: 575px;
+  opacity: 1;
+  color: #08149e;
+  text-shadow: #d300ff 1px 0 10px;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+}
+.titleOfHeaderHover {
+  left: 580px;
+  top: 15px;
+  text-align: center;
+  display: none;
+  color: #08149e;
+  text-shadow: #d300ff 1px 0 10px;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+}
+header:hover .titleOfHeader {
+  display: none;
+}
+header:hover .titleOfHeaderHover {
+  display: inline;
+}
+.main {
+  border-radius: 10px;
+  right: 320px;
+  top: 125px;
+  position: absolute;
+  background-color: rgb(112 114 114 / 48%);
+  width: 275px;
+  height: 780px;
+  border: 1px solid;
+}
+
+.board {
+  /* cursor: url(../assets/images/gun\ 3d.png) 81 40, auto; */
+  top: 125px;
+  position: absolute;
+  background-color: black;
+  width: 1116px;
+  height: 746px;
+  left: 120px;
+  border: 5px black solid;
+  border-radius: 10px;
+}
+.target {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  /* animation: spin 4s infinite linear; */
+  /* transition: all 0.4s linear; */
+  animation: none;
+  display: none;
+}
+#target {
+  transition: all 0.4s linear;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#highScore2 {
+  height: 170px;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.settings {
+  border: 2px solid;
+  left: 20px;
+  width: 235px;
+  height: 95px;
+  margin: 16px 0px;
+  background-color: white;
+  position: relative;
+}
+#sec {
+  color: black;
+}
+#min {
+  display: none;
+}
+#score {
+  color: black;
+}
+.PtsNL {
+  color: black;
+}
+.lvl {
+  color: black;
+}
+.MC {
+  color: black;
+}
+
+#ctn_title {
+  display: block;
+  background-color: bisque;
+  border: black 5px solid;
+  width: 1500px;
+  margin: auto;
+  height: 70px;
+}
+
+.title {
+  top: 15px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+#principal {
+  /* cursor: url(../assets/images/gun\ 3d.png) 81 40, auto; */
+  top: 125px;
+  position: absolute;
+  background-color: black;
+  width: 1116px;
+  height: 746px;
+  left: 120px;
+  border: 5px black solid;
+}
+
+#ctn_right {
+  margin: 0px 1345px;
+  top: 125px;
+  position: absolute;
+  background-color: rgb(0, 195, 195);
+  width: 275px;
+  height: 755px;
+  /* right: 110px; */
+}
+
+.div_child {
+  left: 20px;
+  width: 235px;
+  height: 95px;
+  margin: 3px 0px;
+  background-color: white;
+  position: relative;
+}
+
+.div_child2 {
+  left: 20px;
+  width: 235px;
+  height: 165px;
+  margin: 3px 0px;
+  background-color: white;
+  position: relative;
+}
+
+/* On montre le premier texte */
+.text-base {
+  top: 15px;
+  left: 575px;
+  opacity: 1;
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+}
+/* On cache le second texte */
+.text-hover {
+  left: 10px;
+  top: -20px;
+  text-align: center;
+  display: none;
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+}
+/* On fait disparaitre le premier texte au passage de la souris. */
+.button:hover span.text-base {
+  opacity: 0;
+}
+/* On fait apparaitre le second texte au passage de la souris. */
+.button:hover span.text-hover {
+  display: block;
+}
+.button {
+  display: block;
+  background-color: bisque;
+  border: black 5px solid;
+  width: 1500px;
+  margin: auto;
+  height: 70px;
+}
+
+.mid_div {
+  left: 120px;
+  position: absolute;
+  width: 1125px;
+  top: 88px;
+}
+
+.mid_div2 {
+  position: relative;
+  left: 112px;
+  width: 1125px;
+  bottom: -795px;
+  height: 35px;
+  transform: rotateX(180deg);
+}
+
+#down-off {
+  position: absolute;
+  right: 10px;
+}
+
+#up-off {
+  top: 140px;
+  position: absolute;
+  right: 29px;
+}
+
+/* animation des ufo 1 et 2 pour qu'il fasse des allez retour */
+
+#ufo {
+  position: relative;
+  top: -10px;
+  animation: traveling 5s infinite paused;
+}
+
+@keyframes traveling {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 1069px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+#ufo2 {
+  position: relative;
+  top: -10px;
+  animation: traveling2 5s infinite paused;
+}
+
+@keyframes traveling2 {
+  0% {
+    left: 1069px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 1069px;
+  }
+}
+
+/* animation de l'alien pour tourner sur lui même */
+#catch_him {
+  width: auto;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* canvas {
+  background-color: red;
+}
+ */
+
+#home {
+  clip-path: url(#cache);
+}
+
+#red {
+  fill: none;
+  opacity: 0.15;
+  stroke: #ce1b5f;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#blue {
+  fill: none;
+  opacity: 0.15;
+  stroke: #06a1c4;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#light-blue {
+  fill: none;
+  opacity: 0.15;
+  stroke: #06a1c4;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 800;
+  animation: draw 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+
+i#vol {
+  position: relative;
+  color: white;
+  font-size: 50px;
+  right: -110px;
+}
+
+i#volx {
+  position: relative;
+  color: white;
+  font-size: 50px;
+  right: -110px;
+  display: none;
+}
+
+#icon_rules {
+  position: relative;
+  font-size: 50px;
+  right: -40px;
+  top: -65px;
+  width: 50px;
+}
+
+#icon_rules_open {
+  position: relative;
+  font-size: 50px;
+  right: -40px;
+  top: -65px;
+  display: none;
+  width: 50px;
+}
+
+div#coulissant {
+  transition-property: right;
+  transition-duration: 1s;
+  top: 140px;
+  right: -210px;
+  position: absolute;
+  width: 200px;
+  height: 735px;
+  background: #80808096;
+  border: 2px black solid;
+}
+
+h2 {
+  position: relative;
+  top: -55px;
+  text-align: center;
+  text-decoration: underline;
+  padding: 0px 0px 10px 0px;
+}
+
+h3 {
+  position: relative;
+  font-size: x-large;
+  text-align: center;
+  text-decoration: underline;
+  top: -70px;
+}
+
+#charactere {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  top: -60px;
+}
+
+.charactere {
+  position: relative;
+  left: 10px;
+}
+
+.salameche {
+  position: relative;
+  left: 60px;
+}
+
+.btn_difficulty {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+}
+
+.text_diff {
+  top: -60px;
+  left: 40px;
+  font-size: 20px;
+  position: relative;
+}
+
+#menu_vol {
+  padding: 0px 0px 15px 0px;
+}
+
+#easy {
+  left: 55px;
+}
+#medium {
+  background-color: green;
+  left: 32px;
+}
+#hard {
+  left: 60px;
+}
+
+i.fa-solid.fa-circle-arrow-left {
+  top: 350px;
+  position: relative;
+  font-size: 40px;
+  left: -30px;
+}
+
+i.fa-solid.fa-circle-arrow-left:hover {
+  left: -40px;
+}
+
+img#nyan_cat {
+  position: relative;
+  left: -5px;
+  top: -120px;
+}
+
+#game_over_title {
+  font-size: 100px;
+  position: relative;
+  color: red;
+  text-shadow: 5px 5px #558abb;
+  left: 57px;
+  top: 160px;
+}
+
+#game_over {
+  top: 125px;
+  position: absolute;
+  background-color: black;
+  width: 1116px;
+  height: 746px;
+  left: 120px;
+  border: 5px black solid;
+  display: none;
+}
+
+#arrow_settings {
+  z-index: -1;
+  top: 313px;
+  width: 456px;
+  position: absolute;
+  right: -100px;
+}
+
+#text_settings {
+  text-align: center;
+  position: absolute;
+  right: 20px;
+  width: 275px;
+  font-size: 30px;
+  top: 235px;
+}
+
+#intro {
+  left: 205px;
+  top: 251px;
+  text-align: center;
+  position: absolute;
+  font-size: 52px;
+  color: pink;
+}
+
+img#pacman {
+  left: 5px;
+  position: absolute;
+  top: 237px;
+}
+
+img#mortal {
+  transform: scaleX(-1);
+  position: absolute;
+  top: 270px;
+  right: 10px;
+}
+
+#msl {
+  position: relative;
+  bottom: -800px;
+  left: 700px;
+}
+
+#title_rules {
+  left: 385px;
+  font-size: 45px;
+  top: 38px;
+  position: relative;
+  color: rebeccapurple;
+  z-index: 1;
+}
+
+#div_rules {
+  left: 120px;
+  position: absolute;
+  width: auto;
+  z-index: 1;
+  display: none;
+}
+
+#text_rules {
+  padding: 10px;
+  width: 875px;
+  border: 2px solid white;
+  color: rebeccapurple;
+  text-align: center;
+  border-radius: 5px;
+  left: 252px;
+  position: sticky;
+}
+
+#player_case {
+  top: 30px;
+  overflow-y: scroll;
+  width: 235px;
+  height: 140px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#separation {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  top: -15px;
+}
+
+#separation2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  top: -15px;
+}
+#separation3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  top: -15px;
+}
+#separation4 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  top: -15px;
+}
+#separation5 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  top: -15px;
+}
