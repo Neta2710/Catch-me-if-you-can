@@ -7,7 +7,7 @@ const pokemon = new Audio("assets/songs/pokemon_soundtrack.mp3");
 const spaceInvader = new Audio("assets/songs/space_invaders.mp3");
 const nyanCat = new Audio("assets/songs/nyan-cat-song.mp3");
 const levelup = new Audio("assets/songs/level_up.mp3");
-const nul = new Audio("assets/songs/nul.mp3");
+const nulll = new Audio("assets/songs/nulll.mp3");
 audio.volume = 0.5;
 tetris.volume = 0.1;
 click_sound.volume = 0.1;
@@ -16,7 +16,7 @@ kirby.volume = 0.1;
 pokemon.volume = 0.1;
 spaceInvader.volume = 0.1;
 levelup.volume = 0.1;
-nul.volume = 0.5;
+nulll.volume = 0.5;
 var vitesse = 300;
 var SrcCharacter = "assets/images/tetris.png";
 var click_coulissement = 1;
@@ -115,7 +115,7 @@ function check() {
     Start();
   } else {
     alert("Rhalala encore quelqu'un qui a peur de perdre trop vite...");
-    nul.play();
+    nulll.play();
   }
 }
 function Start() {
@@ -353,7 +353,7 @@ function volume() {
     pokemon.volume = 0;
     spaceInvader.volume = 0;
     nyanCat.volume = 0;
-    nul.volume = 0;
+    nulll.volume = 0;
     vol++;
   } else {
     document.getElementById("vol").style.display = "block";
@@ -366,7 +366,7 @@ function volume() {
     pokemon.volume = 0.1;
     spaceInvader.volume = 0.1;
     nyanCat.volume = 0.1;
-    nul.volume = 0.5;
+    nulll.volume = 0.5;
     vol--;
   }
 }
