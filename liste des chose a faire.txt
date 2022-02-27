@@ -1,11 +1,11 @@
 chose a faire pour terminer 
- 
-1 ajoueter la date sur le hover de highscore
 
-2 nettoyer le code supprimer les chose inutile et ajouter des commentaire de partout puis bien ranger
+1 nettoyer le code supprimer les chose inutile et ajouter des commentaire de partout puis bien ranger
 
-3 innertext des highscore au lancement du site
+2 innertext des highscore au lancement du site
 
-4 (projectile de l'arme)
+3 (projectile de l'arme)
 
-5 (bonus potentiel)
+4 (bonus potentiel)
+
+5 (ajouter des couleur au seconde)

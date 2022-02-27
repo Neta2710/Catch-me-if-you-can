@@ -174,11 +174,12 @@ function Start() {
           inter = 0;
 
           var name = prompt("What's your name ?");
-
+          var datenouveau = new Date().toLocaleString()
           var nouveau = {
             nameofplayer: name,
             pointsofplayer: points,
             lvlofplayer: lvlPoints,
+            date: datenouveau
           };
           console.log(HighScore);
           if (HighScore == undefined) {
@@ -188,7 +189,9 @@ function Start() {
           HighScore.sort((a, b) => a.pointsofplayer - b.pointsofplayer);
           HighScore.reverse();
           localStorage.setItem("highScores", JSON.stringify(HighScore));
-
+          
+          
+          // -----------------------------------------------------------------Même action 5 fois pour inner html les highscore ---------------------------------------------------------------------
           if (HighScore[0] == null) {
             console.log("highscore 1 n'existe pas encore");
           } else {
@@ -199,6 +202,7 @@ function Start() {
             document.getElementById("scorehighScore").innerText +=
               "Lvl :" + " " + HighScore[0].lvlofplayer;
             document.getElementById("separation").innerText += "____________";
+            document.getElementById("1").title = HighScore[0].date
           }
           if (HighScore[1] == null) {
             console.log("highscore 2 n'existe pas encore");
@@ -210,6 +214,7 @@ function Start() {
             document.getElementById("scorehighScore2").innerText +=
               "Lvl :" + " " + HighScore[1].lvlofplayer;
             document.getElementById("separation2").innerText += "____________";
+            document.getElementById("2").title = HighScore[1].date
           }
 
           if (HighScore[2] == null) {
@@ -222,6 +227,7 @@ function Start() {
             document.getElementById("scorehighScore3").innerText +=
               "Lvl :" + " " + HighScore[2].lvlofplayer;
             document.getElementById("separation3").innerText += "____________";
+            document.getElementById("3").title = HighScore[2].date
           }
 
           if (HighScore[3] == null) {
@@ -234,6 +240,7 @@ function Start() {
             document.getElementById("scorehighScore4").innerText +=
               "Lvl :" + " " + HighScore[3].lvlofplayer;
             document.getElementById("separation4").innerText += "____________";
+            document.getElementById("4").title = HighScore[3].date
           }
 
           if (HighScore[4] == null) {
@@ -246,12 +253,11 @@ function Start() {
             document.getElementById("scorehighScore5").innerText +=
               "Lvl :" + " " + HighScore[4].lvlofplayer;
             document.getElementById("separation5").innerText += "____________";
+            document.getElementById("5").title = HighScore[4].date
           }
 
-          // let separation = document.createElement("span");
-          // separation.className = "separation";
-          // separation.textContent = "____________";
-          // document.getElementById("player_case").appendChild(separation);
+          // --------------------------------------------------------------------------------------------------------------------------------------------c
+  
 
           document.getElementById("target").style.display = "none";
           document.getElementById("game_over").style.display = "block";
