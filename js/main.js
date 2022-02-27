@@ -296,7 +296,7 @@ function Start() {
             "color 5s infinite linear;";
             document.getElementById("reset").style.display = "block"
         }
-      }, 100);
+      }, 1000);
     }
   }
 
