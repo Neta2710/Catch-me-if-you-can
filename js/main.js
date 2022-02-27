@@ -26,6 +26,10 @@ var x = 1;
 var z = 1;
 var nyan = 0;
 var HighScore = [];
+var C = {
+  min: { val: 0, DOM: document.getElementById("min") },
+  sec: { val: 60, DOM: document.getElementById("sec") },
+};
 
 if (HighScore == undefined) {
   console.log("il n'y a pas encore de highscore dans le local storage");
@@ -39,10 +43,7 @@ if (HighScore == undefined) {
   }
 }
 
-const C = {
-  min: { val: 0, DOM: document.getElementById("min") },
-  sec: { val: 60, DOM: document.getElementById("sec") },
-};
+
 
 function print() {
   if (HighScore[0] == null) {
@@ -191,9 +192,11 @@ function Start() {
             lvlofplayer: lvlPoints,
             date: datenouveau,
           };
-          console.log(HighScore);
           if (HighScore == undefined) {
             HighScore = [];
+          }
+          if (nouveau.nameofplayer == "") {
+            nouveau.nameofplayer = "anonyme"
           }
           HighScore.push(nouveau);
           HighScore.sort((a, b) => a.pointsofplayer - b.pointsofplayer);
@@ -279,6 +282,7 @@ function Start() {
           pokemon.pause();
           document.querySelector("body").style.animation =
             "color 5s infinite linear;";
+            document.getElementById("reset").style.display = "block"
         }
       }, 100);
     }
@@ -563,3 +567,25 @@ function seeRules() {
 //   separation.textContent = "____________";
 //   document.getElementById("player_case").appendChild(separation);
 // }
+
+function Reset() {
+  nyanCat.pause();
+  nyan = 0;
+  document.getElementById("target").style.display = "block";
+  document.getElementById("game_over").style.display = "none";
+  select_tetris()
+  document.querySelector("body").style.animation =
+  "color 5s infinite linear;";
+  document.getElementById("reset").style.display = "none"
+
+  C = {
+    min: { val: 0, DOM: document.getElementById("min") },
+    sec: { val: 60, DOM: document.getElementById("sec") },
+  };
+  w--
+  points = 0;
+  score.innerHTML = points;
+  Start()
+}
+
+
