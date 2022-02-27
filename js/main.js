@@ -177,10 +177,17 @@ function Start() {
           C.min.val -= x;
           C.sec.val = 59;
         }
+        if (C.sec.val < 30) {
+          document.getElementById("sec").style.color = "orange"
+        }
+        if (C.sec.val < 10) {
+          document.getElementById("sec").style.color = "red"
+        }
         C.min.val < 10
           ? (C.min.DOM.innerHTML = "0" + C.min.val)
           : (C.min.DOM.innerHTML = C.min.val);
         if (C.sec.val == 0) {
+          document.getElementById("sec").style.color = "black"
           clearInterval(inter);
           inter = 0;
 
@@ -198,6 +205,10 @@ function Start() {
           if (nouveau.nameofplayer == "") {
             nouveau.nameofplayer = "anonyme"
           }
+          if (nouveau.nameofplayer == null) {
+            nouveau.nameofplayer = "anonyme"
+          }
+
           HighScore.push(nouveau);
           HighScore.sort((a, b) => a.pointsofplayer - b.pointsofplayer);
           HighScore.reverse();
