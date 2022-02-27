@@ -32,7 +32,7 @@ var C = {
 };
 
 if (HighScore == undefined) {
-  console.log("il n'y a pas encore de highscore dans le local storage");
+  console.log("Il n'y a pas encore de highscore dans le local storage");
 } else {
   HighScore = getDataLocalStorage("highScores");
   function getDataLocalStorage(key) {
