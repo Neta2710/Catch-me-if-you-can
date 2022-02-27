@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/minecraft.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Catch Me If You Can !</title>
+    <style>
+      @font-face {
+        font-family: Minecraft;
+        src: url("assets/font/Minecraft.ttf");
+      }
+      * {
+        font-family: Minecraft;
+      }
+    </style>
+  </head>
+  <header>
+    <div class="start">
+      <span class="titleOfHeader">Catch Me If You Can !</span>
+      <span class="titleOfHeaderHover">Start The Game ?</span>
+    </div>
+  </header>
+
+  <body>
+    <div class="mid_div">
+      <img src="assets/images/ufo.png" alt="" width="5%" id="ufo" />
+    </div>
+
+    <div class="board" id="fond" onclick="sound()">
+      <div id="div_rules">
+        <p id="title_rules">rules</p>
+        <p id="text_rules">
+          Le principe de ce jeu fun est simple : on pose d'un temps de 60
+          secondes. Le Joueur dispose d'un pistolet laser a propulsions
+          synergetique afin de tirer sur la cible. Il devra tirer autant de fois
+          que possible sur celle-ci avant la fin du temps imparti.
+          <span style="font-style: italic"
+            >(l'apparition de cette fenetre peut eventuellement empecher au
+            joueur de jouer convenablement.)</span
+          >
+        </p>
+      </div>
+      <img
+        src="assets/images/tetris.png"
+        alt=""
+        class="target"
+        id="target"
+        onclick="degat()"
+      />
+      <p id="intro">CLICK ON THE TITLE FOR START</p>
+      <img src="assets/images/pacman.gif" alt="" id="pacman" />
+      <img
+        src="assets/images/mortal.gif"
+        alt=""
+        id="mortal"
+        style="image-orientation: 90deg flip"
+      />
+    </div>
+    <div id="game_over">
+      <h1 id="game_over_title">Game over</h1>
+      <img src="assets/images/nyancat.gif" width="100%" id="nyan_cat" />
+    </div>
+
+    <div class="mid_div2">
+      <img src="assets/images/ufo.png" alt="" width="5%" id="ufo2" />
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="score settings">Score : <span id="score">0</span></div>
+        <div class="PtsNxtLvl settings">
+          Points Next Level : <span class="PtsNL"></span>
+        </div>
+        <div class="lvls settings">Level : <span class="lvl"></span></div>
+        <div class="missedClicks settings">
+          Missed Clicks : <span class="MC"></span>
+        </div>
+        <div class="timer settings">
+          Timer : <span id="min"></span><span id="sec">00</span>
+        </div>
+        <div class="highScore settings" id="highScore2">
+          High Score :
+          <div id="player_case" style="font-size: 13px;">
+            <span id="namehighScore"></span>
+            <span id="lvlhighScore"></span>
+            <span id="scorehighScore"></span>
+            <span id="separation"></span>
+
+            <span id="namehighScore2"></span>
+            <span id="lvlhighScore2"></span>
+            <span id="scorehighScore2"></span>
+            <span id="separation2"></span>
+
+            <span id="namehighScore3"></span>
+            <span id="lvlhighScore3"></span>
+            <span id="scorehighScore3"></span>
+            <span id="separation3"></span>
+
+            <span id="namehighScore4"></span>
+            <span id="lvlhighScore4"></span>
+            <span id="scorehighScore4"></span>
+            <span id="separation4"></span>
+
+            <span id="namehighScore5"></span>
+            <span id="lvlhighScore5"></span>
+            <span id="scorehighScore5"></span>
+            <span id="separation5"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img
+      src="assets/images/test-removebg-preview.png"
+      alt=""
+      id="arrow_settings"
+    />
+    <p id="text_settings">click here for see the settings !!!</p>
+
+    <div id="coulissant">
+      <i class="fa-solid fa-circle-arrow-left" onclick="coulissement()"></i>
+      <div id="menu_vol">
+        <i class="fa-solid fa-volume-high" id="vol" onclick="volume()"></i>
+        <i class="fa-solid fa-volume-xmark" id="volx" onclick="volume()"></i>
+      </div>
+      <div id="rules">
+        <i class="fas fa-book" id="icon_rules" onclick="seeRules()"></i>
+        <i
+          class="fas fa-book-open"
+          id="icon_rules_open"
+          onclick="seeRules()"
+        ></i>
+      </div>
+      <h2>Choose your Charactere</h2>
+      <div class="charactere">
+        <img
+          src="assets/images/tetris.png"
+          alt=""
+          id="charactere"
+          onclick="select_tetris()"
+        />
+        <img
+          src="assets/images/Alien2.png"
+          alt=""
+          id="charactere"
+          onclick="select_spaceInvader()"
+        />
+        <img
+          src="assets/images/mario.png"
+          alt=""
+          id="charactere"
+          onclick="select_mario()"
+        />
+        <img
+          src="assets/images/kirby.png"
+          alt=""
+          id="charactere"
+          onclick="select_kirby()"
+        />
+        <img
+          src="assets/images/Salameche.png"
+          alt=""
+          id="charactere"
+          class="salameche"
+          onclick="select_salameche()"
+        />
+      </div>
+      <h3>Choose your difficulty</h3>
+      <p class="text_diff">
+        Easy
+        <button
+          id="easy"
+          class="btn_difficulty"
+          onclick="difficult_easy()"
+        ></button>
+      </p>
+      <p class="text_diff">
+        Medium<button
+          id="medium"
+          class="btn_difficulty"
+          onclick="difficult_medium()"
+          disabled
+        ></button>
+      </p>
+      <p class="text_diff">
+        Hard<button
+          id="hard"
+          class="btn_difficulty"
+          onclick="difficult_hard()"
+        ></button>
+      </p>
+    </div>
+
+    <footer>
+      <p id="msl">
+        Copyright 2022 © by
+        <a href="mailto:ChetritNetanael@gmail.com">Netanael Chetrit</a>
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
