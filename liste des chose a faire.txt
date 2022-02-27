@@ -4,8 +4,10 @@ chose a faire pour terminer
 
 2 innertext des highscore au lancement du site
 
-3 (projectile de l'arme)
+3 reset !
 
-4 (bonus potentiel)
+4 (projectile de l'arme)
 
-5 (ajouter des couleur au seconde)
+5 (bonus potentiel)
+
+6 (ajouter des couleur au seconde)
