@@ -2,8 +2,6 @@ chose a faire pour terminer
 
 1 nettoyer le code supprimer les chose inutile et ajouter des commentaire de partout puis bien ranger
 
-2 innertext des highscore au lancement du site
-
 3 reset !
 
 4 (projectile de l'arme)
@@ -11,3 +9,5 @@ chose a faire pour terminer
 5 (bonus potentiel)
 
 6 (ajouter des couleur au seconde)
+
+7 empecher de click start en  pleine game

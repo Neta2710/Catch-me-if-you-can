@@ -44,68 +44,78 @@ const C = {
   sec: { val: 60, DOM: document.getElementById("sec") },
 };
 
-// function imprime() {
-//   if (HighScore[0] == null) {
-//     console.log("highscore 1 n'existe pas encore");
-//   } else {
-//     document.getElementById("namehighScore").innerText +=
-//       "Name :" + " " + HighScore[0].nameofplayer;
-//     document.getElementById("lvlhighScore").innerText +=
-//       "Points :" + " " + HighScore[0].pointsofplayer;
-//     document.getElementById("scorehighScore").innerText +=
-//       "Lvl :" + " " + HighScore[0].lvlofplayer;
-//     document.getElementById("separation").innerText += "____________";
-//   }
-//   if (HighScore[1] == null) {
-//     console.log("highscore 2 n'existe pas encore");
-//   } else {
-//     document.getElementById("namehighScore2").innerText +=
-//       "Name :" + " " + HighScore[1].nameofplayer;
-//     document.getElementById("lvlhighScore2").innerText +=
-//       "Points :" + " " + HighScore[1].pointsofplayer;
-//     document.getElementById("scorehighScore2").innerText +=
-//       "Lvl :" + " " + HighScore[1].lvlofplayer;
-//     document.getElementById("separation2").innerText += "____________";
-//   }
+function print() {
+  if (HighScore[0] == null) {
+    console.log("highscore 1 n'existe pas encore");
+  } else {
+    document.getElementById("namehighScore").innerText +=
+      "Name :" + " " + HighScore[0].nameofplayer;
+    document.getElementById("lvlhighScore").innerText +=
+      "Points :" + " " + HighScore[0].pointsofplayer;
+    document.getElementById("scorehighScore").innerText +=
+      "Lvl :" + " " + HighScore[0].lvlofplayer;
+    document.getElementById("separation").innerText += "____________";
+    document.getElementById("1").title = HighScore[0].date;
+  }
+  if (HighScore[1] == null) {
+    console.log("highscore 2 n'existe pas encore");
+  } else {
+    document.getElementById("namehighScore2").innerText +=
+      "Name :" + " " + HighScore[1].nameofplayer;
+    document.getElementById("lvlhighScore2").innerText +=
+      "Points :" + " " + HighScore[1].pointsofplayer;
+    document.getElementById("scorehighScore2").innerText +=
+      "Lvl :" + " " + HighScore[1].lvlofplayer;
+    document.getElementById("separation2").innerText += "____________";
+    document.getElementById("2").title = HighScore[1].date;
+  }
 
-//   if (HighScore[2] == null) {
-//     console.log("highscore 3 n'existe pas encore");
-//   } else {
-//     document.getElementById("namehighScore3").innerText +=
-//       "Name :" + " " + HighScore[2].nameofplayer;
-//     document.getElementById("lvlhighScore3").innerText +=
-//       "Points :" + " " + HighScore[2].pointsofplayer;
-//     document.getElementById("scorehighScore3").innerText +=
-//       "Lvl :" + " " + HighScore[2].lvlofplayer;
-//     document.getElementById("separation3").innerText += "____________";
-//   }
+  if (HighScore[2] == null) {
+    console.log("highscore 3 n'existe pas encore");
+  } else {
+    document.getElementById("namehighScore3").innerText +=
+      "Name :" + " " + HighScore[2].nameofplayer;
+    document.getElementById("lvlhighScore3").innerText +=
+      "Points :" + " " + HighScore[2].pointsofplayer;
+    document.getElementById("scorehighScore3").innerText +=
+      "Lvl :" + " " + HighScore[2].lvlofplayer;
+    document.getElementById("separation3").innerText += "____________";
+    document.getElementById("3").title = HighScore[2].date;
+  }
 
-//   if (HighScore[3] == null) {
-//     console.log("highscore 4 n'existe pas encore");
-//   } else {
-//     document.getElementById("namehighScore4").innerText +=
-//       "Name :" + " " + HighScore[3].nameofplayer;
-//     document.getElementById("lvlhighScore4").innerText +=
-//       "Points :" + " " + HighScore[3].pointsofplayer;
-//     document.getElementById("scorehighScore4").innerText +=
-//       "Lvl :" + " " + HighScore[3].lvlofplayer;
-//     document.getElementById("separation4").innerText += "____________";
-//   }
+  if (HighScore[3] == null) {
+    console.log("highscore 4 n'existe pas encore");
+  } else {
+    document.getElementById("namehighScore4").innerText +=
+      "Name :" + " " + HighScore[3].nameofplayer;
+    document.getElementById("lvlhighScore4").innerText +=
+      "Points :" + " " + HighScore[3].pointsofplayer;
+    document.getElementById("scorehighScore4").innerText +=
+      "Lvl :" + " " + HighScore[3].lvlofplayer;
+    document.getElementById("separation4").innerText += "____________";
+    document.getElementById("4").title = HighScore[3].date;
+  }
 
-//   if (HighScore[4] == null) {
-//     console.log("highscore 5 n'existe pas encore");
-//   } else {
-//     document.getElementById("namehighScore5").innerText +=
-//       "Name :" + " " + HighScore[4].nameofplayer;
-//     document.getElementById("lvlhighScore5").innerText +=
-//       "Points :" + " " + HighScore[4].pointsofplayer;
-//     document.getElementById("scorehighScore5").innerText +=
-//       "Lvl :" + " " + HighScore[4].lvlofplayer;
-//     document.getElementById("separation5").innerText += "____________";
-//   }
-// }
-// imprime();
-
+  if (HighScore[4] == null) {
+    console.log("highscore 5 n'existe pas encore");
+  } else {
+    document.getElementById("namehighScore5").innerText +=
+      "Name :" + " " + HighScore[4].nameofplayer;
+    document.getElementById("lvlhighScore5").innerText +=
+      "Points :" + " " + HighScore[4].pointsofplayer;
+    document.getElementById("scorehighScore5").innerText +=
+      "Lvl :" + " " + HighScore[4].lvlofplayer;
+    document.getElementById("separation5").innerText += "____________";
+    document.getElementById("5").title = HighScore[4].date;
+  }
+}
+if (HighScore == undefined) {
+  console.log(
+    "il n'y a pas encore de highscore au lancement du site pour imprimé quoi que ce soit"
+  );
+} else {
+  print();
+}
 
 var buttonStart = document
   .querySelector(".start")
@@ -174,12 +184,12 @@ function Start() {
           inter = 0;
 
           var name = prompt("What's your name ?");
-          var datenouveau = new Date().toLocaleString()
+          var datenouveau = new Date().toLocaleString();
           var nouveau = {
             nameofplayer: name,
             pointsofplayer: points,
             lvlofplayer: lvlPoints,
-            date: datenouveau
+            date: datenouveau,
           };
           console.log(HighScore);
           if (HighScore == undefined) {
@@ -189,75 +199,73 @@ function Start() {
           HighScore.sort((a, b) => a.pointsofplayer - b.pointsofplayer);
           HighScore.reverse();
           localStorage.setItem("highScores", JSON.stringify(HighScore));
-          
-          
+
           // -----------------------------------------------------------------Même action 5 fois pour inner html les highscore ---------------------------------------------------------------------
           if (HighScore[0] == null) {
             console.log("highscore 1 n'existe pas encore");
           } else {
-            document.getElementById("namehighScore").innerText +=
+            document.getElementById("namehighScore").innerText =
               "Name :" + " " + HighScore[0].nameofplayer;
-            document.getElementById("lvlhighScore").innerText +=
+            document.getElementById("lvlhighScore").innerText =
               "Points :" + " " + HighScore[0].pointsofplayer;
-            document.getElementById("scorehighScore").innerText +=
+            document.getElementById("scorehighScore").innerText =
               "Lvl :" + " " + HighScore[0].lvlofplayer;
-            document.getElementById("separation").innerText += "____________";
-            document.getElementById("1").title = HighScore[0].date
+            document.getElementById("separation").innerText = "____________";
+            document.getElementById("1").title = HighScore[0].date;
           }
           if (HighScore[1] == null) {
             console.log("highscore 2 n'existe pas encore");
           } else {
-            document.getElementById("namehighScore2").innerText +=
+            document.getElementById("namehighScore2").innerText =
               "Name :" + " " + HighScore[1].nameofplayer;
-            document.getElementById("lvlhighScore2").innerText +=
+            document.getElementById("lvlhighScore2").innerText =
               "Points :" + " " + HighScore[1].pointsofplayer;
-            document.getElementById("scorehighScore2").innerText +=
+            document.getElementById("scorehighScore2").innerText =
               "Lvl :" + " " + HighScore[1].lvlofplayer;
-            document.getElementById("separation2").innerText += "____________";
-            document.getElementById("2").title = HighScore[1].date
+            document.getElementById("separation2").innerText = "____________";
+            document.getElementById("2").title = HighScore[1].date;
           }
 
           if (HighScore[2] == null) {
             console.log("highscore 3 n'existe pas encore");
           } else {
-            document.getElementById("namehighScore3").innerText +=
+            document.getElementById("namehighScore3").innerText =
               "Name :" + " " + HighScore[2].nameofplayer;
-            document.getElementById("lvlhighScore3").innerText +=
+            document.getElementById("lvlhighScore3").innerText =
               "Points :" + " " + HighScore[2].pointsofplayer;
-            document.getElementById("scorehighScore3").innerText +=
+            document.getElementById("scorehighScore3").innerText =
               "Lvl :" + " " + HighScore[2].lvlofplayer;
-            document.getElementById("separation3").innerText += "____________";
-            document.getElementById("3").title = HighScore[2].date
+            document.getElementById("separation3").innerText = "____________";
+            document.getElementById("3").title = HighScore[2].date;
           }
 
           if (HighScore[3] == null) {
             console.log("highscore 4 n'existe pas encore");
           } else {
-            document.getElementById("namehighScore4").innerText +=
+            document.getElementById("namehighScore4").innerText =
               "Name :" + " " + HighScore[3].nameofplayer;
-            document.getElementById("lvlhighScore4").innerText +=
+            document.getElementById("lvlhighScore4").innerText =
               "Points :" + " " + HighScore[3].pointsofplayer;
-            document.getElementById("scorehighScore4").innerText +=
+            document.getElementById("scorehighScore4").innerText =
               "Lvl :" + " " + HighScore[3].lvlofplayer;
-            document.getElementById("separation4").innerText += "____________";
-            document.getElementById("4").title = HighScore[3].date
+            document.getElementById("separation4").innerText = "____________";
+            document.getElementById("4").title = HighScore[3].date;
           }
 
           if (HighScore[4] == null) {
             console.log("highscore 5 n'existe pas encore");
           } else {
-            document.getElementById("namehighScore5").innerText +=
+            document.getElementById("namehighScore5").innerText =
               "Name :" + " " + HighScore[4].nameofplayer;
-            document.getElementById("lvlhighScore5").innerText +=
+            document.getElementById("lvlhighScore5").innerText =
               "Points :" + " " + HighScore[4].pointsofplayer;
-            document.getElementById("scorehighScore5").innerText +=
+            document.getElementById("scorehighScore5").innerText =
               "Lvl :" + " " + HighScore[4].lvlofplayer;
-            document.getElementById("separation5").innerText += "____________";
-            document.getElementById("5").title = HighScore[4].date
+            document.getElementById("separation5").innerText = "____________";
+            document.getElementById("5").title = HighScore[4].date;
           }
 
           // --------------------------------------------------------------------------------------------------------------------------------------------c
-  
 
           document.getElementById("target").style.display = "none";
           document.getElementById("game_over").style.display = "block";
