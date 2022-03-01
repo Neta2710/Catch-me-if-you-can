@@ -30,7 +30,9 @@
     </style>
   </head>
   <header>
-    <div class="hidestart"> <img src="assets/images/kingkong.gif" alt="" width="23%" id="king"></div>
+    <div class="hidestart">
+      <img src="assets/images/kingkong.gif" alt="" width="23%" id="king" />
+    </div>
     <div class="start">
       <span class="titleOfHeader">Catch Me If You Can !</span>
       <span class="titleOfHeaderHover">Start The Game ?</span>
@@ -38,11 +40,10 @@
   </header>
 
   <body>
-    <div class="mid_div">
-      <img src="assets/images/ufo.png" alt="" width="5%" id="ufo" />
-    </div>
-
     <div class="board" id="fond" onclick="sound()">
+      <div class="mid_div">
+        <img src="assets/images/ufo.png" alt="" width="5%" id="ufo" />
+      </div>
       <div id="div_rules">
         <p id="title_rules">rules</p>
         <p id="text_rules">
@@ -51,7 +52,8 @@
           synergetique afin de tirer sur la cible. Il devra tirer autant de fois
           que possible sur celle-ci avant la fin du temps imparti.
           <span style="font-style: italic">
-            (l'apparition de cette fenetre peut eventuellement empecher aujoueur de jouer convenablement.)
+            (l'apparition de cette fenetre peut eventuellement empecher aujoueur
+            de jouer convenablement.)
           </span>
         </p>
       </div>
@@ -70,6 +72,9 @@
         id="mortal"
         style="image-orientation: 90deg flip"
       />
+      <div class="mid_div2">
+        <img src="assets/images/ufo.png" alt="" width="5%" id="ufo2" />
+      </div>
     </div>
     <div id="game_over">
       <h1 id="game_over_title">Game over</h1>
@@ -77,58 +82,53 @@
     </div>
 
     <div id="div_reset">
-      <button id ="reset" onclick="Reset()">RESET</button>
+      <button id="reset" onclick="Reset()">RESET</button>
     </div>
 
-    <div class="mid_div2">
-      <img src="assets/images/ufo.png" alt="" width="5%" id="ufo2" />
-    </div>
     <div class="main">
-      <div class="container">
-        <div class="score settings">Score : <span id="score">0</span></div>
-        <div class="PtsNxtLvl settings">
-          Points Next Level : <span class="PtsNL"></span>
-        </div>
-        <div class="lvls settings">Level : <span class="lvl"></span></div>
-        <div class="missedClicks settings">
-          Missed Clicks : <span class="MC"></span>
-        </div>
-        <div class="timer settings">
-          Timer : <span id="min"></span><span id="sec">00</span>
-        </div>
-        <div class="highScore settings" id="highScore2">
-          High Score :
-          <div id="player_case" style="font-size: 13px">
-            <div id="1" title="">
-              <span id="namehighScore"></span>
-              <span id="lvlhighScore"></span>
-              <span id="scorehighScore"></span>
-              <span id="separation"></span>
-            </div>
-            <div id="2" title="">
-              <span id="namehighScore2"></span>
-              <span id="lvlhighScore2"></span>
-              <span id="scorehighScore2"></span>
-              <span id="separation2"></span>
-            </div>
-            <div id="3" title="">
-              <span id="namehighScore3"></span>
-              <span id="lvlhighScore3"></span>
-              <span id="scorehighScore3"></span>
-              <span id="separation3"></span>
-            </div>
-            <div id="4" title="">
-              <span id="namehighScore4"></span>
-              <span id="lvlhighScore4"></span>
-              <span id="scorehighScore4"></span>
-              <span id="separation4"></span>
-            </div>
-            <div id="5" title="">
-              <span id="namehighScore5"></span>
-              <span id="lvlhighScore5"></span>
-              <span id="scorehighScore5"></span>
-              <span id="separation5"></span>
-            </div>
+      <div class="score settings">Score : <span id="score">0</span></div>
+      <div class="PtsNxtLvl settings">
+        Points Next Level : <span class="PtsNL"></span>
+      </div>
+      <div class="lvls settings">Level : <span class="lvl"></span></div>
+      <div class="missedClicks settings">
+        Missed Clicks : <span class="MC"></span>
+      </div>
+      <div class="timer settings">
+        Timer : <span id="min"></span><span id="sec">00</span>
+      </div>
+      <div class="highScore settings" id="highScore2">
+        High Score :
+        <div id="player_case" style="font-size: 13px">
+          <div id="1" title="">
+            <span id="namehighScore"></span>
+            <span id="lvlhighScore"></span>
+            <span id="scorehighScore"></span>
+            <span id="separation"></span>
+          </div>
+          <div id="2" title="">
+            <span id="namehighScore2"></span>
+            <span id="lvlhighScore2"></span>
+            <span id="scorehighScore2"></span>
+            <span id="separation2"></span>
+          </div>
+          <div id="3" title="">
+            <span id="namehighScore3"></span>
+            <span id="lvlhighScore3"></span>
+            <span id="scorehighScore3"></span>
+            <span id="separation3"></span>
+          </div>
+          <div id="4" title="">
+            <span id="namehighScore4"></span>
+            <span id="lvlhighScore4"></span>
+            <span id="scorehighScore4"></span>
+            <span id="separation4"></span>
+          </div>
+          <div id="5" title="">
+            <span id="namehighScore5"></span>
+            <span id="lvlhighScore5"></span>
+            <span id="scorehighScore5"></span>
+            <span id="separation5"></span>
           </div>
         </div>
       </div>

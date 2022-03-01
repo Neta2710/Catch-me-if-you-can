@@ -305,8 +305,8 @@ function Start() {
   target.addEventListener("mouseover", moveTarget);
   function moveTarget() {
     setTimeout(function () {
-      target.style.top = Math.floor(Math.random() * 700 + 1) + "px"; //Math.floor((Math.random() * 100) + 1);  Generates random number between 1 and 100
-      target.style.left = Math.floor(Math.random() * 1020 + 1) + "px"; //Math.floor((Math.random() * 200) + 1);  Generates random number between 1 and 200
+      target.style.top = Math.floor(Math.random() * 72.84 + 1) + "vh"; //Math.floor((Math.random() * 100) + 1);  Generates random number between 1 and 100
+      target.style.left = Math.floor(Math.random() * 53.12 + 1) + "vw"; //Math.floor((Math.random() * 200) + 1);  Generates random number between 1 and 200
     }, vitesse);
   }
   // deplacement de la div ^^^^^^^^^^^^^^^^^^^^^^^^
