@@ -6,3 +6,14 @@ chose a faire pour terminer
 
 3 (bonus potentiel)
 
+______________
+
+cote responsive 
+
+terminer les mesure vh et vw sur :
+
+-Secoupe 
+-div a droit (coulissante)
+-fleche du coulissement
+
+faire le @media screen !
