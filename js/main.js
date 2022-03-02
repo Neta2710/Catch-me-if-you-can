@@ -57,6 +57,7 @@ function print() {
       "Lvl :" + " " + HighScore[0].lvlofplayer;
     document.getElementById("separation").innerText += "____________";
     document.getElementById("1").title = HighScore[0].date;
+    document.getElementById("separation").title = HighScore[0].date;
   }
   if (HighScore[1] == null) {
     console.log("highscore 2 n'existe pas encore");
@@ -69,6 +70,7 @@ function print() {
       "Lvl :" + " " + HighScore[1].lvlofplayer;
     document.getElementById("separation2").innerText += "____________";
     document.getElementById("2").title = HighScore[1].date;
+    document.getElementById("separation2").title = HighScore[1].date;
   }
 
   if (HighScore[2] == null) {
@@ -82,6 +84,7 @@ function print() {
       "Lvl :" + " " + HighScore[2].lvlofplayer;
     document.getElementById("separation3").innerText += "____________";
     document.getElementById("3").title = HighScore[2].date;
+    document.getElementById("separation3").title = HighScore[2].date;
   }
 
   if (HighScore[3] == null) {
@@ -95,6 +98,7 @@ function print() {
       "Lvl :" + " " + HighScore[3].lvlofplayer;
     document.getElementById("separation4").innerText += "____________";
     document.getElementById("4").title = HighScore[3].date;
+    document.getElementById("separation4").title = HighScore[3].date;
   }
 
   if (HighScore[4] == null) {
@@ -108,6 +112,7 @@ function print() {
       "Lvl :" + " " + HighScore[4].lvlofplayer;
     document.getElementById("separation5").innerText += "____________";
     document.getElementById("5").title = HighScore[4].date;
+    document.getElementById("separation5").title = HighScore[4].date;
   }
 }
 if (HighScore == undefined) {

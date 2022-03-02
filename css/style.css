@@ -575,9 +575,9 @@ div#arrowtext {
 
 img#pacman {
   width: 9.895833333333334vw;
-  left: 0.26109660574412535vw;
+  left: 1.2610966057441253vw;
   position: absolute;
-  top: 25.291136vh;
+  top: 25.691136vh;
 }
 
 img#mortal {
@@ -596,9 +596,9 @@ img#mortal {
 }
 
 #title_rules {
-  left: 385px;
-  font-size: 45px;
-  top: 38px;
+  left: 18.052083333333332vw;
+  font-size: 2.34375vw;
+  top: 0.9542143600416235vh;
   position: relative;
   color: rebeccapurple;
   z-index: 1;
@@ -613,14 +613,14 @@ img#mortal {
 }
 
 #text_rules {
-  padding: 10px;
-  width: 875px;
+  padding: 1.04vh 0.52vw;
+  width: 45.833333333333336vw;
   border: 2px solid white;
   color: rebeccapurple;
   text-align: center;
   border-radius: 5px;
-  left: 252px;
-  position: sticky;
+  left: -2.875vw;
+  position: relative;
 }
 
 #player_case {
