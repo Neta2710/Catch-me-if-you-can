@@ -408,8 +408,8 @@ function difficult_easy() {
   document.getElementById("medium").disabled = false;
   document.getElementById("medium").style.backgroundColor = "white";
   document.getElementById("easy").style.backgroundColor = "green";
-  document.getElementById("target").style.width = "80px";
-  document.getElementById("target").style.height = "80px";
+  document.getElementById("target").style.width = "4.1vw";
+  document.getElementById("target").style.height = "8.3vh";
   document.getElementById("medium").disabled = false;
   document.getElementById("hard").disabled = false;
   vitesse = 700;
@@ -420,8 +420,8 @@ function difficult_medium() {
   document.getElementById("hard").style.backgroundColor = "white";
   document.getElementById("easy").style.backgroundColor = "white";
   document.getElementById("medium").style.backgroundColor = "green";
-  document.getElementById("target").style.width = "50px";
-  document.getElementById("target").style.height = "50px";
+  document.getElementById("target").style.width = "2.6vw";
+  document.getElementById("target").style.height = "5.2vh";
   document.getElementById("easy").disabled = false;
   document.getElementById("hard").disabled = false;
   vitesse = 350;
@@ -432,8 +432,8 @@ function difficult_hard() {
   document.getElementById("medium").style.backgroundColor = "white";
   document.getElementById("easy").style.backgroundColor = "white";
   document.getElementById("hard").style.backgroundColor = "green";
-  document.getElementById("target").style.width = "30px";
-  document.getElementById("target").style.height = "30px";
+  document.getElementById("target").style.width = "1.5vw";
+  document.getElementById("target").style.height = "3.1vh";
   document.getElementById("easy").disabled = false;
   document.getElementById("medium").disabled = false;
   vitesse = 150;
@@ -543,12 +543,12 @@ function select_salameche() {
 
 function coulissement() {
   if (click_coulissement == 1) {
-    document.getElementById("coulissant").style.right = "0px";
+    document.getElementById("coulissant").style.right = "0vw";
     document.getElementById("arrow_settings").style.display = "none";
     document.getElementById("text_settings").style.display = "none";
     click_coulissement--;
   } else {
-    document.getElementById("coulissant").style.right = "-205px";
+    document.getElementById("coulissant").style.right = "-10.67vw";
     setTimeout(() => {
       document.getElementById("arrow_settings").style.display = "block";
       document.getElementById("text_settings").style.display = "block";

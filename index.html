@@ -30,12 +30,13 @@
     </style>
   </head>
   <header>
-    <div class="hidestart">
-      <img src="assets/images/kingkong.gif" alt="" width="23%" id="king" />
-    </div>
+  
     <div class="start">
       <span class="titleOfHeader">Catch Me If You Can !</span>
       <span class="titleOfHeaderHover">Start The Game ?</span>
+      <div class="hidestart">
+        <img src="assets/images/kingkong.gif" alt="" width="23%" id="king" />
+      </div>
     </div>
   </header>
 
@@ -100,61 +101,73 @@
       <div class="highScore settings" id="highScore2">
         High Score :
         <div id="player_case" style="font-size: 13px">
-          <div id="1" title="">
+          <div id="1" class="classement_parti" title="">
             <span id="namehighScore"></span>
             <span id="lvlhighScore"></span>
             <span id="scorehighScore"></span>
-            <span id="separation"></span>
+            
           </div>
-          <div id="2" title="">
+          <span id="separation"></span>
+          <div id="2" class="classement_parti" title="">
             <span id="namehighScore2"></span>
             <span id="lvlhighScore2"></span>
             <span id="scorehighScore2"></span>
-            <span id="separation2"></span>
+           
           </div>
-          <div id="3" title="">
+          <span id="separation2"></span>
+          <div id="3" class="classement_parti" title="">
             <span id="namehighScore3"></span>
             <span id="lvlhighScore3"></span>
             <span id="scorehighScore3"></span>
-            <span id="separation3"></span>
+           
           </div>
-          <div id="4" title="">
+          <span id="separation3"></span>
+          <div id="4" class="classement_parti" title="">
             <span id="namehighScore4"></span>
             <span id="lvlhighScore4"></span>
             <span id="scorehighScore4"></span>
-            <span id="separation4"></span>
-          </div>
-          <div id="5" title="">
+           
+          </div>     
+          <span id="separation4"></span>
+          <div id="5" class="classement_parti" title="">
+
             <span id="namehighScore5"></span>
             <span id="lvlhighScore5"></span>
             <span id="scorehighScore5"></span>
-            <span id="separation5"></span>
+        
           </div>
+          <span id="separation5"></span>
         </div>
       </div>
     </div>
 
-    <img
-      src="assets/images/test-removebg-preview.png"
-      alt=""
-      id="arrow_settings"
-    />
-    <p id="text_settings">click here for see the settings !!!</p>
-
     <div id="coulissant">
-      <i class="fa-solid fa-circle-arrow-left" onclick="coulissement()"></i>
-      <div id="menu_vol">
-        <i class="fa-solid fa-volume-high" id="vol" onclick="volume()"></i>
-        <i class="fa-solid fa-volume-xmark" id="volx" onclick="volume()"></i>
+      
+      <div id="arrowtext">
+        <i class="fa-solid fa-circle-arrow-left" onclick="coulissement()">
+                <img
+                src="assets/images/test-removebg-preview.png"
+                alt=""
+                id="arrow_settings"/>
+              <p id="text_settings">click here for see the settings !!!</p>
+        </i>
       </div>
-      <div id="rules">
-        <i class="fas fa-book" id="icon_rules" onclick="seeRules()"></i>
-        <i
-          class="fas fa-book-open"
-          id="icon_rules_open"
-          onclick="seeRules()"
-        ></i>
+      
+        <div id="option">
+            
+              <i class="fa-solid fa-volume-high" id="vol" onclick="volume()"></i>
+              <i class="fa-solid fa-volume-xmark" id="volx" onclick="volume()"></i>
+           
+          
+              <i class="fas fa-book" id="icon_rules" onclick="seeRules()"></i>
+              <i
+                class="fas fa-book-open"
+                id="icon_rules_open"
+                onclick="seeRules()"
+              ></i>
+           
       </div>
+      <div id="option-chrt">
       <h2>Choose your Charactere</h2>
       <div class="charactere">
         <img
@@ -185,11 +198,13 @@
           src="assets/images/Salameche.png"
           alt=""
           id="charactere"
-          class="salameche"
           onclick="select_salameche()"
         />
       </div>
+    </div>
+    <div id="option-dif">
       <h3>Choose your difficulty</h3>
+      <div id="diff">
       <p class="text_diff">
         Easy
         <button
@@ -214,7 +229,8 @@
         ></button>
       </p>
     </div>
-
+    </div>
+  </div>
     <footer>
       <p id="msl">
         Copyright 2022 © by
