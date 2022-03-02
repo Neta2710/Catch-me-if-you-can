@@ -352,14 +352,13 @@ function Start() {
     MC.innerHTML = counter;
   }
 
-  // document.querySelector(".board").addEventListener("click", function (e) {
-  //   if (e.pointerType == "mouse") {
-  //     scoreLess();
-  //   } else {
-  //     alert("Impossible de jouer sans l'utilisation d'une souris... TRICHEUR");
-  //   }
-  // });
-  scoreLess();
+  document.querySelector(".board").addEventListener("click", function (e) {
+    if (e.pointerType == "mouse" || "pen" || "touch") {
+      scoreLess();
+    } else {
+      alert("Impossible de jouer sans l'utilisation d'une souris... TRICHEUR");
+    }
+  });
 }
 
 function sound() {
