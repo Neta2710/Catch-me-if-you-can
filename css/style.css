@@ -613,6 +613,7 @@ img#mortal {
 }
 
 #text_rules {
+  top: -1.0405827263267429vh;
   padding: 1.04vh 0.52vw;
   width: 45.833333333333336vw;
   border: 2px solid white;
