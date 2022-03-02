@@ -359,8 +359,9 @@ function Start() {
   //     alert("Impossible de jouer sans l'utilisation d'une souris... TRICHEUR");
   //   }
   // });
+  scoreLess();
 }
-scoreLess();
+
 function sound() {
   if (w == 2) {
     audio.play();
