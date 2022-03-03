@@ -353,7 +353,7 @@ function Start() {
   }
 
   document.querySelector(".board").addEventListener("click", function (e) {
-    if (e.pointerType == "mouse" || "pen" || "touch") {
+    if (e.pointerType == "mouse") {
       scoreLess();
     } else {
       alert("Impossible de jouer sans l'utilisation d'une souris... TRICHEUR");
