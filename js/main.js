@@ -356,7 +356,8 @@ function Start() {
     if (e.pointerType == "mouse") {
       scoreLess();
     } else {
-      alert("Impossible de jouer sans l'utilisation d'une souris... TRICHEUR");
+      scoreLess();
+      // alert("Impossible de jouer sans l'utilisation d'une souris... TRICHEUR");
     }
   });
 }
