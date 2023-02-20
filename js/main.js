@@ -291,7 +291,9 @@ function Start() {
           // --------------------------------------------------------------------------------------------------------------------------------------------c
 
           document.getElementById("target").style.display = "none";
-          document.getElementById("game_over").style.display = "block";
+          document.getElementById("reset").style.display = "block";
+          document.getElementById("game_over_title").style.display = "block";
+          document.getElementById("nyan_cat").style.display = "block";
           nyanCat.play();
           nyan = 1;
           nyanCat.loop = true;
@@ -312,10 +314,29 @@ function Start() {
   var target = document.querySelector(".target");
   target.addEventListener("mouseover", moveTarget);
   function moveTarget() {
+
+    if (window.innerWidth < 900) {
     setTimeout(function () {
-      target.style.top = Math.floor(Math.random() * 665 + 1) + "px"; //Math.floor((Math.random() * 100) + 1);  Generates random number between 1 and 100
+      target.style.top = Math.floor(Math.random() * 440 + 1) + "px"; //Math.floor((Math.random() * 100) + 1);  Generates random number between 1 and 100
+      target.style.left = Math.floor(Math.random() * 640 + 1) + "px"; //Math.floor((Math.random() * 200) + 1);  Generates random number between 1 and 200
+    }, vitesse);
+  
+  }else if (window.innerWidth < 1000) {
+    setTimeout(function () {
+      target.style.top = Math.floor(Math.random() * 540 + 1) + "px"; //Math.floor((Math.random() * 100) + 1);  Generates random number between 1 and 100
+      target.style.left = Math.floor(Math.random() * 810 + 1) + "px"; //Math.floor((Math.random() * 200) + 1);  Generates random number between 1 and 200
+    }, vitesse);
+  }else if (window.innerWidth < 1530) {
+    setTimeout(function () {
+      target.style.top = Math.floor(Math.random() * 610 + 1) + "px"; //Math.floor((Math.random() * 100) + 1);  Generates random number between 1 and 100
+      target.style.left = Math.floor(Math.random() * 950 + 1) + "px"; //Math.floor((Math.random() * 200) + 1);  Generates random number between 1 and 200
+    }, vitesse);
+  }else  {
+    setTimeout(function () {
+      target.style.top = Math.floor(Math.random() * 670 + 1) + "px"; //Math.floor((Math.random() * 100) + 1);  Generates random number between 1 and 100
       target.style.left = Math.floor(Math.random() * 1070 + 1) + "px"; //Math.floor((Math.random() * 200) + 1);  Generates random number between 1 and 200
     }, vitesse);
+  }
   }
   // deplacement de la div ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -417,8 +438,8 @@ function difficult_easy() {
   document.getElementById("medium").disabled = false;
   document.getElementById("medium").style.backgroundColor = "white";
   document.getElementById("easy").style.backgroundColor = "green";
-  document.getElementById("target").style.width = "4.1vw";
-  document.getElementById("target").style.height = "8.3vh";
+  document.getElementById("target").style.width = "75px";
+  document.getElementById("target").style.height = "75px";
   document.getElementById("medium").disabled = false;
   document.getElementById("hard").disabled = false;
   vitesse = 700;
@@ -429,8 +450,8 @@ function difficult_medium() {
   document.getElementById("hard").style.backgroundColor = "white";
   document.getElementById("easy").style.backgroundColor = "white";
   document.getElementById("medium").style.backgroundColor = "green";
-  document.getElementById("target").style.width = "2.6vw";
-  document.getElementById("target").style.height = "5.2vh";
+  document.getElementById("target").style.width = "50px";
+  document.getElementById("target").style.height = "50px";
   document.getElementById("easy").disabled = false;
   document.getElementById("hard").disabled = false;
   vitesse = 350;
@@ -441,8 +462,8 @@ function difficult_hard() {
   document.getElementById("medium").style.backgroundColor = "white";
   document.getElementById("easy").style.backgroundColor = "white";
   document.getElementById("hard").style.backgroundColor = "green";
-  document.getElementById("target").style.width = "1.5vw";
-  document.getElementById("target").style.height = "3.1vh";
+  document.getElementById("target").style.width = "35px";
+  document.getElementById("target").style.height = "35px  ";
   document.getElementById("easy").disabled = false;
   document.getElementById("medium").disabled = false;
   vitesse = 150;
@@ -593,8 +614,9 @@ function Reset() {
   nyanCat.pause();
   nyan = 0;
   document.getElementById("target").style.display = "block";
-  document.getElementById("game_over").style.display = "none";
-  select_tetris()
+  document.getElementById("reset").style.display = "none";
+  document.getElementById("game_over_title").style.display = "none";
+  document.getElementById("nyan_cat").style.display = "none";
   document.querySelector("body").style.animation =
   "color 5s infinite linear;";
   document.getElementById("reset").style.display = "none"
