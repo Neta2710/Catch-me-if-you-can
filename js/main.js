@@ -136,7 +136,10 @@ function check() {
 }
 function Start() {
   w++;
-  document.querySelector(".hidestart").style.display = "block";
+  document.querySelector(".start").style.backgroundColor = "black";
+  document.querySelector(".titleOfHeader").style.display = "none";
+  document.querySelector(".titleOfHeaderHover").style.display = "none"
+  document.getElementById("king").style.display = "block"
   document.getElementById("intro").style.display = "none";
   document.getElementById("pacman").style.display = "none";
   document.getElementById("mortal").style.display = "none";
@@ -310,8 +313,8 @@ function Start() {
   target.addEventListener("mouseover", moveTarget);
   function moveTarget() {
     setTimeout(function () {
-      target.style.top = Math.floor(Math.random() * 72.84 + 1) + "vh"; //Math.floor((Math.random() * 100) + 1);  Generates random number between 1 and 100
-      target.style.left = Math.floor(Math.random() * 53.12 + 1) + "vw"; //Math.floor((Math.random() * 200) + 1);  Generates random number between 1 and 200
+      target.style.top = Math.floor(Math.random() * 665 + 1) + "px"; //Math.floor((Math.random() * 100) + 1);  Generates random number between 1 and 100
+      target.style.left = Math.floor(Math.random() * 1070 + 1) + "px"; //Math.floor((Math.random() * 200) + 1);  Generates random number between 1 and 200
     }, vitesse);
   }
   // deplacement de la div ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -549,12 +552,12 @@ function select_salameche() {
 
 function coulissement() {
   if (click_coulissement == 1) {
-    document.getElementById("coulissant").style.right = "0vw";
+    document.getElementById("coulissant").style.right = "0px";
     document.getElementById("arrow_settings").style.display = "none";
     document.getElementById("text_settings").style.display = "none";
     click_coulissement--;
   } else {
-    document.getElementById("coulissant").style.right = "-10.67vw";
+    document.getElementById("coulissant").style.right = "-205px";
     setTimeout(() => {
       document.getElementById("arrow_settings").style.display = "block";
       document.getElementById("text_settings").style.display = "block";
