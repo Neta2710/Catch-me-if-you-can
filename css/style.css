@@ -117,8 +117,8 @@ header:hover .titleOfHeaderHover {
 
 .target {
   position: absolute;
-  width: 2.6vw;
-  height: 5.2vh;
+  width: 50px;
+  height: 50px;
   text-align: center;
   animation: none;
   display: none;
@@ -303,6 +303,14 @@ header:hover .titleOfHeaderHover {
   height: 50px;
 }
 
+
+
+#ufo2 {
+  animation: traveling2 5s infinite paused;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
 @keyframes traveling {
   0% {
     left: 0px;
@@ -314,14 +322,6 @@ header:hover .titleOfHeaderHover {
     left: 0px;
   }
 }
-
-#ufo2 {
-  animation: traveling2 5s infinite paused;
-  position: relative;
-  width: 50px;
-  height: 50px;
-}
-
 @keyframes traveling2 {
   0% {
     left: 1085px;
@@ -545,7 +545,7 @@ div#arrowtext {
 }
 
 #raille {
-  margin-top: -50px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -595,10 +595,10 @@ footer {
 }
 
 #div_rules {
-  position: relative;
   margin: 40px;
   z-index: 1;
   display: none;
+  position: fixed;
 }
 
 #text_rules {
@@ -783,3 +783,257 @@ reset:after {
 .classement_parti {
   height: 1vh;
 }
+
+
+@media screen and (max-width: 1790px)  {
+  .board {
+    width: 990px;
+    height: 650px;
+}
+img#pacman {
+  width: 175px;
+  height: 175px;
+}
+img#mortal {
+  width: 175px;
+  height: 150px;
+}
+.mid_div {
+  width: 990px;
+}
+.mid_div2 {
+  width: 990px;
+}
+.main {
+  height: 630px;
+}
+}
+@media screen and (max-width: 1650px)  { 
+  .main {
+    width: 180px;
+    height: 630px;
+}
+.settings {
+  width: 140px;
+  height: 90px;
+  margin: 15px 0px;
+  background-color: white;
+  position: relative;
+}
+}
+@media screen and (max-width: 1530px)  { 
+  #arrow_settings {
+  display: none !important;
+}
+  #text_settings {
+    display: none !important;
+  }
+  @keyframes traveling {
+    0% {
+      left: 0px;
+    }
+    50% {
+      left: 950px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  @keyframes traveling2 {
+    0% {
+      left: 950px;
+    }
+    50% {
+      left: 0px;
+    }
+    100% {
+      left: 950px;
+    }
+  }
+  #sectionMain {
+    margin-left: -150px;
+  }
+  div#coulissant {
+    display: flex;
+    margin-top: 40px;
+    background-color: transparent;
+    border: none;
+    width: auto;
+    height: auto;
+    position: relative;
+    top: auto;
+    right: auto !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .text_diff {
+    font-size: 20px;
+    margin-left: 25px;
+    display: inline-block;
+  }
+  #easy {
+    left: 15px;
+  }
+  #medium {
+    background-color: green;
+    left: 15px;
+  }
+  #hard {
+    left: 25px;
+  }
+  #globalOption {
+    background: #80808096;
+    margin-top: 25px;
+    width: 630px;
+    border: 2px solid black;
+  }
+  i.fa-solid.fa-circle-arrow-left {
+    display: none;
+  }
+}
+@media screen and (max-width: 1430px)  { 
+  .board {
+    width: 850px;
+    height: 600px;
+}
+img#pacman {
+  width: 120px;
+  height: 120px;
+}
+#intro {
+  text-align: center;
+  font-size: 40px;
+  color: pink;
+  width: auto;
+  margin-top: 25px;
+}
+img#mortal {
+  top: 0;
+  left: -50px;
+}
+.main {
+  width: 150px;
+  height: 560px;
+}
+#globalOption {
+  margin-top: 25px;
+  width: 445px;
+
+}
+#sectionMain {
+  margin-left: -70px;
+}
+.mid_div {
+  width: 850px;
+}
+.mid_div2 {
+  width: 850px;
+}
+@keyframes traveling {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 800px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes traveling2 {
+  0% {
+    left: 800px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 800px;
+  }
+}
+
+}
+
+
+@media screen and (max-width: 1230px)  { 
+  #sectionMain {
+    margin-left: -50px;
+  }
+  .main {
+    margin-top: 45px;
+    width: 860px;
+    height: 135px;
+    flex-direction: row;
+}
+
+#sectionMain {
+    display: flex;
+    flex-direction: column;
+}
+.settings {
+	height: 65px;
+    margin: 15px 5px;
+}
+
+div#coulissant {
+    margin-top: 15px;}
+}
+
+@media screen and (max-width: 1000px)  { 
+  #sectionMain {
+    margin: 70px 0px;
+  }
+}
+
+@media screen and (max-width: 900px)  { 
+  .board {
+    width: 700px;
+    height: 500px;
+}
+#intro {
+  margin-top: 65px;
+}
+.mid_div {
+  width: 690px;
+}
+.mid_div2 {
+  width: 690px;
+}
+@keyframes traveling {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 640px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes traveling2 {
+  0% {
+    left: 640px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 640px;
+  }
+}
+#sectionMain {
+  margin: 70px 0px 0px;
+}
+.main {
+  margin-top: 45px;
+  width: 690px;
+  height: 140px;
+  flex-direction: row;
+}
+.settings {
+  height: 100px;
+  margin: 15px 5px;
+}
+}
+
+/* Responsive Ok jusqu'à 768 px */
