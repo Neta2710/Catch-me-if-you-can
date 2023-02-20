@@ -381,7 +381,7 @@ function Start() {
       scoreLess();
     } else {
       scoreLess();
-      // alert("Impossible de jouer sans l'utilisation d'une souris... TRICHEUR");
+      alert("Impossible de jouer sans l'utilisation d'une souris... TRICHEUR");
     }
   });
 }
