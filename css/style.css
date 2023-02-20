@@ -495,31 +495,21 @@ i.fa-solid.fa-circle-arrow-left:hover {
 }
 
 img#nyan_cat {
-  position: relative;
-  left: -0.2604166666666667vw;
-  top: -4.486993vh;
-  width: 100%;
+  display: none;
+    bottom: 10px;
+    position: absolute;
+    width: 100%;
 }
 
 #game_over_title {
-  font-size: 5.208333333333333vw;
-  position: relative;
+  position: absolute;
+  display: none;
+  font-size: 100px;
   color: red;
   text-shadow: 5px 5px #558abb;
-  left: 2.96875vw;
-  top: 16.649323621227886vh;
 }
 
-#game_over {
-  top: 13.007284079084288vh;
-  position: absolute;
-  background-color: black;
-  width: 58.125vw;
-  height: 77.62747138397502vh;
-  left: 6.25vw;
-  border: 5px black solid;
-  display: none;
-}
+
 
 #arrow_settings {
   z-index: -1;
@@ -656,9 +646,11 @@ footer {
 
 #reset,
 reset:after {
-  width: 19.791666666666668vw;
-  height: 8.324661810613943vh;
-  font-size: 1.875vw;
+  z-index: 10;
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
   font-family: "Bebas Neue", cursive;
   background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
   border: 0px;
@@ -666,9 +658,8 @@ reset:after {
   letter-spacing: 5px;
   box-shadow: 5px 0px 0px #00e6f6;
   outline: transparent;
-  position: fixed;
-  top: 77.52341311134235vh;
-  left: 45.2vw;
+  bottom: 50px;
+  right: 0;
   display: none;
 }
 
