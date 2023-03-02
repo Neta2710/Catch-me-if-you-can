@@ -1,3 +1,11 @@
+* { 
+ user-select: none;
+}
+
+img {
+  pointer-events: none;
+}
+
 body {
   background: #33cccc;
   animation: color 20s infinite linear;
